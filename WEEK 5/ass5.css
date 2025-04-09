@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    border: 2px solid black;
+    padding: 5px;
+}
+.nav-links{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    gap: 1.5rem;
+    transition: 3s;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+.content{
+    margin-top: 150px;
+    font-size: x-large;
+}
+footer{
+    margin-top: 150px;
+    text-align: center;
+}
+.contacts{
+    list-style: none;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'site'
+    'phone'
+    'email'
+    'address'
+}
+@media(max-width: 600px){
+    .navbar{
+        background-color: brown;
+        padding: 10px;
+    }
+    .nav-links{
+        justify-content: center;
+    }
+    a:hover{
+        background-color: white;
+        color: brown;
+    }
+}
